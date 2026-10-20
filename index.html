@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevreLab Gizlilik Politikası</title>
+<style>
+:root { --bg:#ffffff; --fg:#1d1f23; --muted:#5b616b; --line:#e3e5e8; --accent:#2f6fe4; --head:#f4f5f7; }
+@media (prefers-color-scheme: dark) { :root { --bg:#16181d; --fg:#e8eaed; --muted:#a6acb4; --line:#2c3038; --accent:#7aa7ff; --head:#1f2229; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+h1 { font-size:1.7rem; line-height:1.25; margin:0.4em 0 0.2em; }
+h2 { font-size:1.2rem; margin:1.8em 0 0.5em; padding-top:0.6em; border-top:1px solid var(--line); }
+em { color:var(--muted); }
+a { color:var(--accent); }
+.tbl { overflow-x:auto; margin:0.8em 0; }
+table { border-collapse:collapse; width:100%; font-size:0.92rem; }
+th, td { border:1px solid var(--line); padding:7px 9px; text-align:left; vertical-align:top; }
+th { background:var(--head); }
+li { margin:0.3em 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>DevreLab Gizlilik Politikası</h1>
+<p><em>Son güncelleme: 21 Ekim 2026 · Sürüm 3</em></p>
+<h2>1. Biz kimiz, bu metin neyi kapsıyor</h2>
+<p>DevreLab, elektronik devreleri ve Arduino'yu bilgisayarda ya da telefonda güvenle denemen için yapılmış bir devre simülatörüdür.</p>
+<ul>
+<li><strong>Veri sorumlusu:</strong> Erol Çalık (DevreLab uygulamasının geliştiricisi), Türkiye</li>
+<li><strong>İletişim:</strong> <a href="mailto:calik.xperia@gmail.com">calik.xperia@gmail.com</a></li>
+<li><strong>Kapsam:</strong> DevreLab uygulamasının Windows, Android (ve ileride iOS) sürümleri.</li>
+</ul>
+<p>Bu metin hangi bilgilerin nerede tutulduğunu, kimin görebildiğini, ne kadar saklandığını ve nasıl silebileceğini sade bir dille anlatır.</p>
+<h2>2. Kısaca</h2>
+<ul>
+<li><strong>Gerçek adını, e-postanı, telefonunu, okulunu istemiyoruz.</strong> Uygulama ilk açılışta senin için kendiliğinden bir misafir hesap açar ve rastgele bir takma ad verir (ör. Mucit#4821). Adı istersen değiştirebilirsin.</li>
+<li><strong>Hesabını bağlamak isteğe bağlıdır.</strong> Bağlarsan devrelerin buluta yedeklenir ve aynı hesapla girdiğin başka cihazda da açılır. Bağlamazsan devrelerin sadece cihazında kalır.</li>
+<li><strong>Reklam yok, kullanım istatistiği (analitik) yok, konum yok, kişiye özel takip yok.</strong> Verilerini satmayız, reklam için kullanmayız.</li>
+<li>Hesap ve bulut hizmetini bizim adımıza <strong>Unity</strong> sağlar (Unity Authentication ve Unity Cloud Save).</li>
+<li>Hesabını ve buluttaki her şeyi uygulamanın içinden tek dokunuşla silebilirsin (Hesap → Hesabımı sil).</li>
+</ul>
+<h2>3. Hangi bilgiler, nerede, ne kadar süre?</h2>
+<p><strong>Cihazında kalanlar</strong> (biz göremeyiz):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Ne</th>
+<th>Neden</th>
+<th>Ne kadar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kurduğun devreler (adı, parçalar, teller, ayarlar, Arduino kodu, oluşturma/değişiklik zamanı)</td>
+<td>Kaydetmek, kaldığın yerden devam etmek</td>
+<td>Sen silene ya da uygulamayı kaldırana kadar</td>
+</tr>
+<tr>
+<td>Silinen devreler ("Silinenler")</td>
+<td>Yanlışlıkla sileni geri getirmek</td>
+<td>30 gün, sonra kendiliğinden silinir</td>
+</tr>
+<tr>
+<td>Ayarlar, son açılan devre, oturum anahtarı</td>
+<td>Uygulamayı açınca seni kaldığın yere ve hesabına götürmek</td>
+<td>Uygulamayı kaldırana kadar</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Unity'ye gidenler</strong> (internet varken):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Ne</th>
+<th>Ne zaman</th>
+<th>Neden</th>
+<th>Ne kadar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oyuncu kimliği (rastgele bir kod, ör. WrWElt…)</td>
+<td>Her zaman (misafirken de)</td>
+<td>Seni tanımak, devrelerini sana bağlamak</td>
+<td>Hesabını silene kadar</td>
+</tr>
+<tr>
+<td>Takma ad</td>
+<td>Her zaman</td>
+<td>Uygulamada adını göstermek</td>
+<td>Hesabını silene kadar</td>
+</tr>
+<tr>
+<td>IP adresi</td>
+<td>Unity'ye her bağlanışta</td>
+<td>Bağlantıyı kurmak, kötüye kullanımı önlemek (Unity'nin hizmeti gereği)</td>
+<td>Unity'nin kurallarına göre</td>
+</tr>
+<tr>
+<td>Bağlı hesap (Google, Apple ya da e-posta ile Unity hesabı)</td>
+<td>Sadece hesabını bağlarsan</td>
+<td>Başka cihazda aynı hesapla girebilmen</td>
+<td>Hesabını silene kadar</td>
+</tr>
+<tr>
+<td>Devrelerin (yukarıdaki cihaz tablosundaki içerik, sıkıştırılmış)</td>
+<td>Sadece hesabın bağlıysa</td>
+<td>Yedek ve başka cihazda açmak</td>
+<td>Devreyi ya da hesabını silene kadar</td>
+</tr>
+</tbody>
+</table></div>
+<p>Google, Apple ya da e-posta ile girişi Unity'nin kendi sayfası yapar. <strong>Şifreni biz hiçbir zaman görmeyiz.</strong> Giriş için hangi bilgilerin kullanıldığını o hizmetin (Google, Apple, Unity) gizlilik kuralları belirler.</p>
+<p>Misafir hesapta buluta devre yüklenmez; Unity'de sadece oyuncu kimliğin ve takma adın bulunur.</p>
+<p>İnternet yoksa uygulama tam çalışır; o sırada hiçbir yere veri gitmez. İnternet gelince bağlı hesabın devreleri eşitlenir.</p>
+<p><strong>Devre adına ve Arduino koduna kişisel bilgi (gerçek ad, okul, telefon, adres) yazma.</strong> Hesabın bağlıysa bunlar da buluta yedeklenir; devreni paylaşırsan karşı taraf da görür.</p>
+<h2>4. Bu bilgileri kim görebilir?</h2>
+<ul>
+<li><strong>Sen:</strong> uygulamada her şeyi görürsün (Hesap sayfası, Devrelerim).</li>
+<li><strong>Unity:</strong> hizmeti bizim adımıza işleten sağlayıcıdır; verileri bizim talimatımızla ve kendi veri işleme sözleşmesine göre işler.</li>
+<li><strong>Biz (geliştirici):</strong> Unity'nin yönetim panelinden takma adını, oyuncu kimliğini, hesabının bağlı olup olmadığını ve (bağlıysa) buluttaki devrelerini teknik olarak görebiliriz. Bunlara yalnızca senin destek isteğin, hata ayıklama ya da kötüye kullanımı önlemek için bakarız.</li>
+<li><strong>Başka kimse:</strong> verilerini satmayız, reklamcılarla paylaşmayız. Kanunen zorunlu olduğu durumlar (ör. mahkeme kararı) dışında üçüncü kişilere vermeyiz.</li>
+</ul>
+<h2>5. Yurt dışına aktarım</h2>
+<p>Unity Technologies'in sunucuları Türkiye dışındadır; hesap ve bulut verilerin yurt dışında işlenir. Unity bu verileri kendi veri işleme sözleşmesine göre, yalnızca hizmeti sunmak için işler; alt işleyenlerinin ve işleme yerlerinin güncel listesi Unity'nin internet sitesinde yayımlanır. Bu aktarımı istemezsen hesabını bağlamadan ve internetsiz kullanabilirsin; bağladıysan Hesap → Hesabımı sil ile her şeyi silebilirsin.</p>
+<h2>6. Devreni paylaştığında</h2>
+<p>Devrelerim → Paylaş ile devreni panoya kopyalayabilir ya da dosya (.devrelab) olarak kaydedebilirsin. Bunu sadece sen başlatırsın; kime, hangi yolla (WhatsApp, e-posta, USB bellek...) göndereceğini sen seçersin. Gönderdiğin uygulamanın kendi gizlilik kuralları geçerlidir.</p>
+<p>Paylaşılan dosyada devrenin adı, içeriği, Arduino kodu ve zamanları bulunur. Takma adın, oyuncu kimliğin, e-postan ya da cihaz bilgin bulunmaz.</p>
+<h2>7. Çocuklar ve gençler</h2>
+<p>DevreLab'ı çoğu 18 yaşın altında olan öğrenciler kullanıyor. Bu yüzden:</p>
+<ul>
+<li>Gerçek ad, okul, telefon, konum istemiyoruz; uygulama hesap bağlamadan ve internetsiz tam çalışır.</li>
+<li>Uygulamada başka kullanıcılarla mesajlaşma, herkese açık içerik ya da reklam yoktur.</li>
+<li><strong>DevreLab 13 yaş ve üzeri için tasarlandı.</strong> 13 yaşından küçüksen uygulamayı velinin izniyle ve onunla birlikte kullan; hesap bağlamak isteğe bağlıdır.</li>
+</ul>
+<p>Veliysen ve bir sorunun varsa <a href="mailto:calik.xperia@gmail.com">calik.xperia@gmail.com</a> adresine yazabilirsin; çocuğunun hesabını ve bulut verilerini sileriz.</p>
+<h2>8. Hesabını ve verilerini silme</h2>
+<ul>
+<li><strong>Uygulamanın içinden:</strong> Hesap → Hesabımı sil. Hesabın ve buluttaki bütün devre yedeklerin kalıcı olarak silinir. Cihazındaki devrelerin silinmez; istersen onları Devrelerim'den ya da uygulamayı kaldırarak silersin.</li>
+<li><strong>Tek bir devre:</strong> Devrelerim → Sil. Hesabın bağlıysa devre buluttan da silinir.</li>
+<li><strong>Uygulama elinde değilse</strong> (ör. telefonu kaybettin, uygulamayı kaldırdın): <a href="mailto:calik.xperia@gmail.com">calik.xperia@gmail.com</a> adresine "Hesabımı silin" konusuyla yaz. Bağlı hesabının e-postasını ya da oyuncu kimliğini (Hesap → Kimliği kopyala) belirtirsen hesabını ve bulut verilerini en geç 30 gün içinde sileriz.</li>
+<li><strong>Bağlanmamış misafir hesaplar:</strong> uygulamayı kaldırırsan misafir hesabına bir daha girilemez; bu hesapta sadece oyuncu kimliği ve takma ad bulunur, devre bulunmaz. Silinmesini istersen kaldırmadan önce Hesap → Hesabımı sil'e bas ya da oyuncu kimliğinle bize yaz.</li>
+</ul>
+<h2>9. Hakların</h2>
+<p>KVKK'nın 11. maddesine göre şunları isteyebilirsin:</p>
+<ul>
+<li>Hakkında kişisel veri işlenip işlenmediğini öğrenmek, işlendiyse bilgi istemek</li>
+<li>Hangi amaçla işlendiğini ve bu amaçla kullanılıp kullanılmadığını öğrenmek</li>
+<li>Yurt içinde ya da yurt dışında kimlere aktarıldığını öğrenmek</li>
+<li>Eksik ya da yanlış işlendiyse düzeltilmesini istemek</li>
+<li>Silinmesini ya da yok edilmesini istemek; düzeltme ve silmenin aktarılan kişilere bildirilmesini istemek</li>
+<li>Yalnızca otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etmek</li>
+<li>Kanuna aykırı işleme yüzünden zarara uğradıysan zararın giderilmesini istemek</li>
+</ul>
+<p>Başvurunu <a href="mailto:calik.xperia@gmail.com">calik.xperia@gmail.com</a> adresine yazılı olarak iletebilirsin; en geç 30 gün içinde cevap veririz. Cevaptan memnun kalmazsan Kişisel Verileri Koruma Kurulu'na şikayette bulunabilirsin.</p>
+<h2>10. Değişiklikler</h2>
+<p>Uygulamaya veri toplayan ya da gönderen yeni bir özellik eklendiğinde bu metin güncellenir ve yeni metin, o özellik açılmadan önce uygulamada gösterilir. Eski sürümler aşağıda saklanır.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Sürüm</th>
+<th>Tarih</th>
+<th>Değişiklik</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 (taslak)</td>
+<td>12 Ekim 2026</td>
+<td>İlk metin: veriler yalnızca cihazda, sunucu yok.</td>
+</tr>
+<tr>
+<td>2 (taslak)</td>
+<td>19 Ekim 2026</td>
+<td>Misafir hesap ve takma ad, isteğe bağlı hesap bağlama, buluta yedek (Unity), IP adresi, yurt dışına aktarım, hesap silme yolları.</td>
+</tr>
+<tr>
+<td>3 (taslak)</td>
+<td>20 Ekim 2026</td>
+<td>Veri sorumlusu (Erol Çalık), iletişim adresi, hedef yaş 13+, misafir hesabın silinme yolu, yurt dışına aktarım açıklaması.</td>
+</tr>
+</tbody>
+</table></div>
+</main>
+</body>
+</html>
